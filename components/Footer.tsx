@@ -1,26 +1,18 @@
 import * as React from 'react';
 
 import { useRouter } from 'next/router';
-import { User } from '../typings';
 
-interface HeaderProps {
-  user?: User;
-}
-
-export default function Header({ user }: HeaderProps) {
+export default function Footer() {
   const router = useRouter();
   return (
-    <header className="flex w-full items-center space-x-8 bg-white p-3 px-10 shadow-sm">
-      <span className="mr-auto text-xl font-semibold uppercase">
-        resumaster.ai
-      </span>
+    <footer className="flex w-full space-x-16 bg-white p-8 px-16">
       <a
-        className="link text-sm text-gray-700"
+        className="link ml-auto text-sm text-gray-700"
         href=""
         target="_blank"
         rel="noopener noreferrer"
       >
-        Link1
+        Pricing
       </a>
       <a
         className="link text-sm text-gray-700"
@@ -28,7 +20,7 @@ export default function Header({ user }: HeaderProps) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Link2
+        About Us
       </a>
       <a
         className="link text-sm text-gray-700"
@@ -36,8 +28,8 @@ export default function Header({ user }: HeaderProps) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Link3
+        Contact
       </a>
-    </header>
+    </footer>
   );
 }

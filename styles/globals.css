@@ -8,7 +8,7 @@
   }
 
   .btn {
-    @apply rounded-md bg-[#f8f9fa] p-3 text-sm text-gray-800 ring-gray-200 
+    @apply rounded-md bg-[#f8f9fa] p-3 text-sm tracking-wide text-gray-800 ring-gray-200 
     hover:shadow-md hover:ring-1 focus:outline-none active:ring-gray-300 dark:bg-slate-700 dark:text-gray-50;
   }
 }
@@ -32,9 +32,10 @@ body {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background: rgb(var(--background-start-rgb));
+  /* background: linear-gradient(
     to bottom,
     rgb(var(--background-start-rgb)),
     rgb(var(--background-end-rgb))
-  );
+  ); */
 }
