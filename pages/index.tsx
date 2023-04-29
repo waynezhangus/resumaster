@@ -21,7 +21,7 @@ export default function Home() {
         </p>
         <button className="btn mt-6 w-40">Start</button>
         <img
-          className="mt-6 h-[40rem] w-full"
+          className="mt-6 h-[40rem] w-full object-cover"
           src="https://picsum.photos/900/400"
           alt=""
         />
